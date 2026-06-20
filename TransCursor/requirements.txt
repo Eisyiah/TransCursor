@@ -1,0 +1,18 @@
+# TransCursor 依赖
+# Python 3.10+（开发/打包使用 3.14.2）
+# 安装：pip install -r requirements.txt
+#
+# 注意：torch 用 CPU 版即可（pip 默认就是 CPU 版）。
+# 如需 GPU 加速，按 PyTorch 官网指引装对应 CUDA 版本的 torch。
+
+PyQt6>=6.6
+torch>=2.0
+transformers>=4.40
+paddleocr>=3.7,<3.8
+mss>=9.0
+opencv-python>=4.8
+numpy>=1.24,<2.5
+pywin32>=306
+
+# 打包用（仅构建 exe 时需要，运行不需要）
+pyinstaller>=6.0

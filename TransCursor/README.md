@@ -37,6 +37,39 @@ TransCursor/
 
 启动时会自动检查模型目录是否存在，缺失则弹窗提示。
 
+## 从源码运行
+
+需要 Python 3.10+（开发/打包使用 3.14.2）。
+
+```powershell
+# 1. 克隆仓库
+git clone https://github.com/Eisyiah/TransCursor.git
+cd TransCursor/TransCursor
+
+# 2. 安装依赖
+pip install -r requirements.txt
+
+# 3. 放置模型（见下方"模型放置"）
+
+# 4. 运行
+python main.py
+```
+
+## 模型放置
+
+模型不随仓库分发（4.2GB，超 GitHub 限制）。自行准备后放到源码目录或 exe 同级的 `models/` 下：
+
+```
+TransCursor/TransCursor/models/   # 开发模式（源码目录下）
+├── opusmt/                # MarianMT eng->zho
+├── HY/                    # 腾讯混元 LLM
+└── OCR/
+    ├── OCRdet/            # PP-OCRv6 检测
+    └── OCRrec/            # PP-OCRv6 识别
+```
+
+也可用环境变量指定任意位置：`set TRANSCURSOR_MODELS=D:\my_models`
+
 ## 运行
 
 ```powershell
@@ -48,7 +81,7 @@ python main.py
 模型不打包进 exe，放在 exe 同级 `models/` 文件夹，便于单独替换/更新模型。
 
 ```powershell
-pip install pyinstaller
+pip install -r requirements.txt   # 已含 pyinstaller
 python -m PyInstaller TransCursor.spec --noconfirm
 ```
 
