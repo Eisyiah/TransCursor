@@ -1,5 +1,7 @@
 # TransCursor
 
+[English](README.md) | [简体中文](README_zh.md)
+
 > Real-time offline screen translation with cursor-aware text detection.
 
 TransCursor is a lightweight desktop translation tool that performs OCR and machine translation directly on your local machine. Instead of translating the entire screen, it prioritizes text near the mouse cursor, providing fast contextual translations while reducing unnecessary computation.
