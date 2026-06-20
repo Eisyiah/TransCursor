@@ -47,8 +47,7 @@ OCR检测
 
 ## 适用场景
 
-* Galgame 实时翻译
-* 日文游戏辅助阅读
+* 英文游戏辅助阅读
 * 软件界面翻译
 * 漫画和图片文字识别
 * 外语学习
@@ -77,13 +76,13 @@ OCR检测
 
 ## 未来计划
 
-* Overlay悬浮窗
-* GUI界面
+* Overlay悬浮窗 ！
+* GUI界面 ！
 * GPU加速
 * ONNX Runtime支持
 * 热键控制
 * 多语言支持
-* Windows安装包
+* Windows安装包 ！
 
 ## License
 
