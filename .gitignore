@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.dist-info/
+
+# PyInstaller 打包产物（不提交，本地构建）
+build/
+dist/
+*.spec.bak
+
+# 模型文件（太大，用网盘/Release 单独分发）
+TransCursor/models/
+
+# 临时/调试日志
+*.log
+*_crash.log
+build_log.txt
+out*.txt
+err*.txt
+
+# 测试图片 / 依赖快照（非源码）
+11.jpg
+pip_list.txt
+
+# 开发环境临时
+.venv/
+venv/
+env/
+.vscode/
+.idea/
